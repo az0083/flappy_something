@@ -5,6 +5,7 @@
     this.dObj = null;
     this.v = 0;
     this.jumpingStartHeigth = 0; // bottom line height
+    this.hittedCallback = null;
     return this;
   };
 
@@ -39,6 +40,10 @@
       self.v = 0;
       self.jumpingStartHeigth = 0;
       _t = 0;
+
+      if (self.hittedCallback && typeof self.hittedCallback === 'function') {
+        self.hittedCallback();
+      }
     }
   };
 

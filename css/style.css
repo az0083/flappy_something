@@ -3,7 +3,8 @@ section#main {
   margin: 0 auto;
   width: 400px;
   height: 600px;
-  background-color: #BBFFBB;
+  background-image: url("../img/bg.png");
+  background-repeat: repeat-x;
 }
 
 section#main div#flying {
