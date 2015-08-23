@@ -9,7 +9,6 @@
   BackGround.initWithElementId = function(elemId) {
     var bg = new BackGround();
     bg.dObj = Util.$(elemId);
-    bg.start();
     return bg;
   };
 

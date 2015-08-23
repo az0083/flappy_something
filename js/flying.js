@@ -15,7 +15,6 @@
     flying.jumpingStartHeigth = Settings.startHeight;
     _moveTo.call(flying, flying.currentHeight);
     _addKeyEventListener.call(flying);
-    flying.start();
     return flying;
   };
 
