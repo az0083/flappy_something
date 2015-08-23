@@ -74,9 +74,9 @@ section#main div#systemView div#end div.notice {
 section#main div#flying {
   position: absolute;
   left: 150px;
-  width: 20px;
-  height: 20px;
-  background-color: #BBDDCC;
+  width: 50px;
+  height: 30px;
+  background-image: url("../img/doggy.png");
   z-index: 3;
 }
 
@@ -91,7 +91,7 @@ section#main div.pillar {
 section#main div.pillar div.pillarUp {
   position: relative;
   width: 45px;
-  height: 250px;
+  height: 240px;
   background-image: url("../img/pillar_up.png");
   background-position: center bottom;
 }
@@ -99,13 +99,13 @@ section#main div.pillar div.pillarUp {
 section#main div.pillar div.safeSpace {
   position: relative;
   width: 45px;
-  height: 100px;
+  height: 120px;
 }
 
 section#main div.pillar div.pillarDown {
   position: relative;
   width: 45px;
-  height: 250px;
+  height: 240px;
   background-image: url("../img/pillar_down.png");
   background-position: center top;
 }
