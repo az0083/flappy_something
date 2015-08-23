@@ -8,7 +8,7 @@
     jumpingPower: 250, // pixel/s
     groundHeight: 600, // pixel
     pillarSpeed: 3, // pixel/ms
-    pillarAppearInterval: 1500, // ms
+    pillarAppearInterval: 2000, // ms
   };
 
   w.Settings = w.Settings || Settings;
