@@ -5,6 +5,11 @@ section#main {
   height: 600px;
   background-image: url("../img/bg.png");
   background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+section#cloneSrc {
+  display: none;
 }
 
 section#main div#flying {
@@ -13,4 +18,33 @@ section#main div#flying {
   width: 20px;
   height: 20px;
   background-color: #BBDDCC;
+}
+
+section#main div.pillar {
+  position: absolute;
+  width: 45px;
+  height: 600px;
+  left: 500px;
+}
+
+section#main div.pillar div.pillarUp {
+  position: relative;
+  width: 45px;
+  height: 250px;
+  background-image: url("../img/pillar_up.png");
+  background-position: center bottom;
+}
+
+section#main div.pillar div.safeSpace {
+  position: relative;
+  width: 45px;
+  height: 100px;
+}
+
+section#main div.pillar div.pillarDown {
+  position: relative;
+  width: 45px;
+  height: 250px;
+  background-image: url("../img/pillar_down.png");
+  background-position: center top;
 }
