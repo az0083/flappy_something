@@ -13,8 +13,7 @@
     var flying = new Flying();
     flying.dObj = Util.$(elemId);
     flying.jumpingStartHeigth = Settings.startHeight;
-    _moveTo.call(flying, flying.currentHeight);
-    _addKeyEventListener.call(flying);
+    _moveTo.call(flying, flying.jumpingStartHeigth);
     return flying;
   };
 
@@ -43,6 +42,12 @@
       if (self.hittedCallback && typeof self.hittedCallback === 'function') {
         self.hittedCallback();
       }
+    },
+
+    reset: function() {
+      var self = this;
+      self.jumpingStartHeigth = Settings.startHeight;
+      _moveTo.call(self, self.jumpingStartHeigth);
     }
   };
 
